@@ -401,7 +401,6 @@
 				2841F1FB1CCFF55600D609CE /* [CP] Copy Pods Resources */,
 				2841F1FD1CCFF55600D609CE /* Warn for TODO and FIXME comments */,
 				2841F1FE1CCFF55600D609CE /* Swift Lint */,
-				2841F1FF1CCFF55600D609CE /* Fabric */,
 			);
 			buildRules = (
 			);
@@ -425,7 +424,6 @@
 				7D7B44A655DDFEDD1216A0EE /* [CP] Copy Pods Resources */,
 				283020B81C8A05D400E6EBC2 /* Warn for TODO and FIXME comments */,
 				283020B71C8A057C00E6EBC2 /* Swift Lint */,
-				283020B61C8752C300E6EBC2 /* Fabric */,
 			);
 			buildRules = (
 			);
@@ -597,20 +595,6 @@
 			shellPath = /bin/sh;
 			shellScript = "\"$PODS_ROOT/R.swift/rswift\" \"$SRCROOT/XLProjectName/Helpers/R-Swift\"\n\n";
 		};
-		283020B61C8752C300E6EBC2 /* Fabric */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = Fabric;
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "#<TBR>\"${PODS_ROOT}/Fabric/run\" XLFabricAPIKey";
-		};
 		283020B71C8A057C00E6EBC2 /* Swift Lint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -725,20 +709,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"SwiftLint does not exist, download from https://github.com/realm/SwiftLint\"\nfi";
-		};
-		2841F1FF1CCFF55600D609CE /* Fabric */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = Fabric;
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "#<TBR>\"${PODS_ROOT}/Fabric/run\" XLFabricAPIKey";
 		};
 		2F79BEAD31A7EAC6AD4F4CA1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
