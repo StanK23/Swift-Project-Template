@@ -240,13 +240,6 @@
 			path = XLProjectName;
 			sourceTree = "<group>";
 		};
-		286C922E1CBD691A00208E3B /* Decodable */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Decodable;
-			sourceTree = "<group>";
-		};
 		28C282361C779580003ECA4F /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -260,7 +253,6 @@
 			children = (
 				28C282401C7797CA003ECA4F /* Constants.swift */,
 				8F0759911D7728360012D681 /* Helpers.swift */,
-				286C922E1CBD691A00208E3B /* Decodable */,
 				281731671C9C494C006237C7 /* Controllers */,
 				283020A21C86130600E6EBC2 /* R-Swift */,
 				28C282411C7797CA003ECA4F /* Extensions */,
