@@ -2,7 +2,7 @@
 //  LoadingIndicatorManager.swift
 //  XLProjectName
 //
-//  Created by Diego Ernst on 9/2/16.
+//  Created by XLAuthorName ( XLAuthorWebsite )
 //  Copyright © 2016 'XLOrganizationName'. All rights reserved.
 //
 

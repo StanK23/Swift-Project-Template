@@ -20,8 +20,6 @@ func DEBUGLog(_ message: String, file: String = #file, line: Int = #line, functi
 
 func DEBUGJson(_ value: AnyObject) {
     #if DEBUG
-        if Constants.Debug.jsonResponse {
-//            print(JSONStringify(value))
-        }
+        print(JSONStringify(value))
     #endif
 }

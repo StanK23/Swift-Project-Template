@@ -10,7 +10,6 @@ import UIKit
 import RxSwift
 import XLSwiftKit
 import Eureka
-import Opera
 
 class LoginController: FormViewController {
 
@@ -66,20 +65,6 @@ class LoginController: FormViewController {
             return
         }
 
-        LoadingIndicator.show()
-        Route.User.login(username: username, password: password)
-            .rx_anyObject()
-            .do(onError: { [weak self] (error: Error) in
-                LoadingIndicator.hide()
-                self?.showError("Error", message: (error as? OperaError)?.debugDescription ?? "Sorry user login does not work correctly")
-            })
-            .flatMap() { _ in
-                return Route.User.getInfo(username: username).rx_object()
-            }
-            .subscribe(onNext: { [weak self] (user: User) in
-                LoadingIndicator.hide()
-                self?.showError("Great", message: "You have been successfully logged in")
-            })
-            .addDisposableTo(disposeBag)
+        self.showError("Great", message: "You have been successfully logged in")
     }
 }

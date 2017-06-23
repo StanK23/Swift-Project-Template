@@ -8,7 +8,6 @@
 
 import Foundation
 import UIKit
-import Crashlytics
 import RealmSwift
 
 class RealmManager: AnyObject {
@@ -33,7 +32,7 @@ class RealmManager: AnyObject {
             DEBUGLog("Realm DB path: \(config.fileURL)")
         } catch {
             let nserror = error as NSError
-            Crashlytics.sharedInstance().recordError(nserror)
+//            Crashlytics.sharedInstance().recordError(nserror)
         }
     }
 
@@ -45,7 +44,7 @@ class RealmManager: AnyObject {
             }
         } catch {
             let nserror = error as NSError
-            Crashlytics.sharedInstance().recordError(nserror)
+//            Crashlytics.sharedInstance().recordError(nserror)
         }
     }
 

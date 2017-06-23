@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Crashlytics
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,8 +18,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        setupCrashlytics()
-        setupNetworking()
         stylizeEurekaRows()
         
         // Register the supported push notifications interaction types.
@@ -87,7 +84,7 @@ extension AppDelegate {
             Because notifications are not going to be arriving anyway, it is usually better to degrade gracefully and
             avoid any unnecessary work needed to process or display those notifications.
         */
-        Crashlytics.sharedInstance().recordError(error)
+//        Crashlytics.sharedInstance().recordError(error)
     }
     
     func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable: Any]) {

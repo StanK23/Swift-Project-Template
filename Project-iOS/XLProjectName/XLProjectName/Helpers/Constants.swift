@@ -7,20 +7,9 @@
 //
 
 import Foundation
-import Opera
 import XLSwiftKit
 
 struct Constants {
-
-	struct Network {
-        static let baseUrl = URL(string: "https://api.github.com")!
-        static let AuthTokenName = "Authorization"
-        static let SuccessCode = 200
-        static let successRange = 200..<300
-        static let Unauthorized = 401
-        static let NotFoundCode = 404
-        static let ServerError = 500
-    }
 
     struct Keychain {
         static let serviceIdentifier = UIApplication.bundleIdentifier
@@ -39,8 +28,4 @@ struct Constants {
         
     }
     
-    struct Debug {
-        static let crashlytics = false
-        static let jsonResponse = false
-    }
 }
