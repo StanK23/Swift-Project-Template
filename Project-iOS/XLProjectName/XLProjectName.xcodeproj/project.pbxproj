@@ -11,6 +11,8 @@
 		1A7B4BE51EFCDAA100F7A3AC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7B4BE31EFCDAA100F7A3AC /* User.swift */; };
 		1A7B4BE71EFCDAD200F7A3AC /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7B4BE61EFCDAD200F7A3AC /* RealmManager.swift */; };
 		1A7B4BE81EFCDAD200F7A3AC /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7B4BE61EFCDAD200F7A3AC /* RealmManager.swift */; };
+		1A7B4BEB1F00D52500F7A3AC /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 1A7B4BEA1F00D52500F7A3AC /* .swiftlint.yml */; };
+		1A7B4BEC1F00D52500F7A3AC /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 1A7B4BEA1F00D52500F7A3AC /* .swiftlint.yml */; };
 		281731691C9C4BBC006237C7 /* XLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281731681C9C4BBC006237C7 /* XLViewController.swift */; };
 		2817316B1C9C4BDA006237C7 /* XLTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2817316A1C9C4BDA006237C7 /* XLTableViewController.swift */; };
 		283A74511C84DF2A00E23F88 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C2823A1C7797BA003ECA4F /* LoginController.swift */; };
@@ -93,6 +95,7 @@
 		174F585F7E9D6B2B6BF61B19 /* Pods_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A7B4BE31EFCDAA100F7A3AC /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		1A7B4BE61EFCDAD200F7A3AC /* RealmManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		1A7B4BEA1F00D52500F7A3AC /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
 		20C3863EDAF6B64F5C07C53A /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		281731681C9C4BBC006237C7 /* XLViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XLViewController.swift; sourceTree = "<group>"; };
 		2817316A1C9C4BDA006237C7 /* XLTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XLTableViewController.swift; sourceTree = "<group>"; };
@@ -204,6 +207,7 @@
 		2867E81E1C74C7D300FCEBBD = {
 			isa = PBXGroup;
 			children = (
+				1A7B4BEA1F00D52500F7A3AC /* .swiftlint.yml */,
 				2867E8291C74C7D400FCEBBD /* XLProjectName */,
 				28C69D3A1CD8E3D600F839D6 /* Tests */,
 				28F4E15A1CDA53B5002B70A7 /* UITests */,
@@ -423,7 +427,7 @@
 				DC47F16F71998B02D5AAB204 /* [CP] Embed Pods Frameworks */,
 				7D7B44A655DDFEDD1216A0EE /* [CP] Copy Pods Resources */,
 				283020B81C8A05D400E6EBC2 /* Warn for TODO and FIXME comments */,
-				283020B71C8A057C00E6EBC2 /* Swift Lint */,
+				1A7B4BE91F00D3AA00F7A3AC /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -533,6 +537,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A7B4BEC1F00D52500F7A3AC /* .swiftlint.yml in Resources */,
 				C30C12A81EDEDF2E008C8E57 /* Main.storyboard in Resources */,
 				C30C129F1EDEDF18008C8E57 /* Assets.xcassets in Resources */,
 				C30C12A61EDEDF2E008C8E57 /* LaunchScreen.storyboard in Resources */,
@@ -543,6 +548,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A7B4BEB1F00D52500F7A3AC /* .swiftlint.yml in Resources */,
 				C30C12A71EDEDF2E008C8E57 /* Main.storyboard in Resources */,
 				C30C129E1EDEDF18008C8E57 /* Assets.xcassets in Resources */,
 				C30C12A51EDEDF2E008C8E57 /* LaunchScreen.storyboard in Resources */,
@@ -581,6 +587,20 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UITests/Pods-UITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		1A7B4BE91F00D3AA00F7A3AC /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"";
+		};
 		283020A11C8611A100E6EBC2 /* R-Swift */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -594,20 +614,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"$PODS_ROOT/R.swift/rswift\" \"$SRCROOT/XLProjectName/Helpers/R-Swift\"\n\n";
-		};
-		283020B71C8A057C00E6EBC2 /* Swift Lint */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Swift Lint";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"SwiftLint does not exist, download from https://github.com/realm/SwiftLint\"\nfi";
 		};
 		283020B81C8A05D400E6EBC2 /* Warn for TODO and FIXME comments */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -708,7 +714,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"SwiftLint does not exist, download from https://github.com/realm/SwiftLint\"\nfi";
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"";
 		};
 		2F79BEAD31A7EAC6AD4F4CA1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1067,6 +1073,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/XLProjectName/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1083,6 +1090,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/XLProjectName/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

@@ -20,9 +20,25 @@ disabled_rules: # rule identifiers to exclude from running
 #  - type_body_length
 #  - type_name
   - valid_docs
-  - variable_name
+# - variable_name
   - variable_name_min_length
 #  - variable_name_max_length
+opt_in_rules: # some rules are only opt-in
+  - force_unwrapping
+  - generic_type_name
+  - implicit_getter
+  - implicit_return
+  - implicitly_unwrapped_optional
+  - large_tuple
+  - operator_whitespace
+  - operator_usage_whitespace
+  - return_arrow_whitespace
+  - syntactic_sugar
+  - vertical_parameter_alignment_on_call
+  - vertical_parameter_alignment
+  - vertical_whitespace
+# Find all the available rules by running:
+# swiftlint rules
 excluded: # paths to ignore during linting. overridden by `included`.
   - Carthage
   - Pods
