@@ -1,6 +1,5 @@
 language: objective-c
 osx_image: xcode8.3
-gemfile: Gemfile
 
 before_install:
 - bundle install --path vendor/bundle
