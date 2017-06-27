@@ -7,6 +7,8 @@ before_install:
 - if brew outdated | grep -qx xctool; then brew upgrade xctool; fi
 - gem update
 - gem install xcpretty --no-rdoc --no-ri --no-document --quiet
+- pod --version
+- if [ $POD_LINT == "YES" ]; then bundle exec pod spec lint; fi
 - gem install cocoapods
 - cd Project-iOS/XLProjectName && pod repo update && pod install
 
