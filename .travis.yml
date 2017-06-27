@@ -2,7 +2,6 @@ language: objective-c
 osx_image: xcode8.3
 
 before_install:
-- bundle install --path vendor/bundle
 - brew update
 - brew outdated carthage || brew upgrade carthage
 - if brew outdated | grep -qx xctool; then brew upgrade xctool; fi
