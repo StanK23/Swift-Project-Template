@@ -10,9 +10,6 @@ before_install:
 - gem install cocoapods
 - cd Project-iOS/XLProjectName && pod repo update && pod install
 
-install:
-- rvm get stable
-
 script:
 - xctool clean build -workspace XLProjectName.xcworkspace -scheme XLProjectName -sdk iphonesimulator | xcpretty
 - xcodebuild test -workspace XLProjectName.xcworkspace -scheme XLProjectName -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6S,OS=9.3' | xcpretty
