@@ -7,13 +7,13 @@
 //
 
 import Foundation
-import UIKit
 import KeychainAccess
+import UIKit
 
 extension UIDevice {
 
-    fileprivate static let keychainKey = "device_id"
-    fileprivate static let keychain = Keychain(service: UIApplication.bundleIdentifier)
+    fileprivate static let keychainKey: String = "device_id"
+    fileprivate static let keychain: Keychain = Keychain(service: UIApplication.bundleIdentifier)
 
     static var uniqueId: String {
         do {

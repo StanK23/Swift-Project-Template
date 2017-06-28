@@ -8,7 +8,7 @@
 
 import XCTest
 
-class Tests: XCTestCase {
+internal class Tests: XCTestCase {
     
     override func setUp() {
         super.setUp()

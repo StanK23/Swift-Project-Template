@@ -7,16 +7,16 @@
 //
 
 import Foundation
-import UIKit
 import RealmSwift
+import UIKit
 
-class RealmManager: AnyObject {
+internal class RealmManager: AnyObject {
 
-    static let sharedInstance = RealmManager()
+    static let sharedInstance: RealmManager = RealmManager()
 
-    fileprivate(set) var defaultRealm: Realm!
+    fileprivate(set) var defaultRealm: Realm?
 
-    fileprivate var config = Realm.Configuration()
+    fileprivate var config: Realm.Configuration = Realm.Configuration()
 
     fileprivate init() {
 //        config.schemaVersion = 1
@@ -29,9 +29,9 @@ class RealmManager: AnyObject {
 
         do {
             defaultRealm = try Realm(configuration: config)
-            DEBUGLog("Realm DB path: \(config.fileURL)")
+            DEBUGLog("Realm DB path: \(config.fileURL?.absoluteString ?? "null")")
         } catch {
-            let nserror = error as NSError
+            defaultRealm = nil
 //            Crashlytics.sharedInstance().recordError(nserror)
         }
     }
@@ -43,7 +43,6 @@ class RealmManager: AnyObject {
                 realm.deleteAll()
             }
         } catch {
-            let nserror = error as NSError
 //            Crashlytics.sharedInstance().recordError(nserror)
         }
     }
@@ -56,15 +55,15 @@ class RealmManager: AnyObject {
 
 extension Object {
 
-    fileprivate func realmInst() -> Realm {
+    fileprivate func realmInst() -> Realm? {
         return self.realm ?? RealmManager.sharedInstance.defaultRealm
     }
 
     /** Must be called from main thread */
     func save(_ update: Bool = true) throws {
         let realm = self.realmInst()
-        try realm.write() {
-            realm.add(self, update: update)
+        try realm?.write {
+            realm?.add(self, update: update)
         }
     }
 
@@ -74,8 +73,10 @@ extension Object {
             return
         }
         let realm = first.realmInst()
-        try realm.write() {
-            objects.forEach() { realm.add($0, update: update) }
+        try realm?.write {
+            objects.forEach {
+                realm?.add($0, update: update)
+            }
         }
     }
     

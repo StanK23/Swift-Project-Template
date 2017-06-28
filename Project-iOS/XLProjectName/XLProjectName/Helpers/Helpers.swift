@@ -9,7 +9,7 @@
 import Foundation
 import XLSwiftKit
 
-func DEBUGLog(_ message: String, file: String = #file, line: Int = #line, function: String = #function) {
+internal func DEBUGLog(_ message: String, file: String = #file, line: Int = #line, function: String = #function) {
     #if DEBUG
         let fileURL = NSURL(fileURLWithPath: file)
         let fileName = fileURL.deletingPathExtension?.lastPathComponent ?? ""
@@ -18,7 +18,7 @@ func DEBUGLog(_ message: String, file: String = #file, line: Int = #line, functi
     // Nothing to do if not debugging
 }
 
-func DEBUGJson(_ value: AnyObject) {
+internal func DEBUGJson(_ value: AnyObject) {
     #if DEBUG
         print(JSONStringify(value))
     #endif

@@ -7,15 +7,15 @@
 //
 
 import Foundation
-import UIKit
 import RxCocoa
 import RxSwift
+import UIKit
 
-class XLTableViewController: UIViewController {
+internal class XLTableViewController: UIViewController {
     
-    @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var activityIndicatorView: UIActivityIndicatorView!
-    @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet private weak var tableView: UITableView!
+    @IBOutlet private weak var activityIndicatorView: UIActivityIndicatorView!
+    @IBOutlet private weak var searchBar: UISearchBar!
     
-    var disposeBag = DisposeBag()
+    var disposeBag: DisposeBag = DisposeBag()
 }

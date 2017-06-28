@@ -6,19 +6,19 @@
 //  Copyright © 2016 XLOrganizationName. All rights reserved.
 //
 
-import UIKit
-import RxSwift
-import XLSwiftKit
 import Eureka
+import RxSwift
+import UIKit
+import XLSwiftKit
 
-class LoginController: FormViewController {
+internal class LoginController: FormViewController {
 
     fileprivate struct RowTags {
-        static let LogInUsername = "log in username"
-        static let LogInPassword = "log in password"
+        static let LogInUsername: String = "log in username"
+        static let LogInPassword: String = "log in password"
     }
     
-    let disposeBag = DisposeBag()
+    let disposeBag: DisposeBag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,23 +35,23 @@ class LoginController: FormViewController {
                     $0.title = "Password:"
                     $0.placeholder = "insert password here.."
                 }
-                <<< ButtonRow() {
+                <<< ButtonRow {
                     $0.title = "Log in"
-                    }
-                    .onCellSelection { [weak self] _, _ in
-                        self?.loginTapped()
-                    }
+                }
+                .onCellSelection { [weak self] _, _ in
+                    self?.loginTapped()
+                }
     }
     
     fileprivate func getTextFromRow(_ tag: String) -> String? {
-        let textRow: NameRow = form.rowBy(tag: tag)!
-        let textEntered = textRow.cell.textField.text
+        let textRow: NameRow? = form.rowBy(tag: tag)
+        let textEntered = textRow?.cell.textField.text
         return textEntered
     }
     
     fileprivate func getPasswordFromRow(_ tag: String) -> String? {
-        let textRow: PasswordRow = form.rowBy(tag: tag)!
-        let textEntered = textRow.cell.textField.text
+        let textRow: PasswordRow? = form.rowBy(tag: tag)
+        let textEntered = textRow?.cell.textField.text
         return textEntered
     }
     

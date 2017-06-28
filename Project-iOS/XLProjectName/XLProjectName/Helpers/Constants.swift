@@ -9,12 +9,12 @@
 import Foundation
 import XLSwiftKit
 
-struct Constants {
+internal struct Constants {
 
     struct Keychain {
-        static let serviceIdentifier = UIApplication.bundleIdentifier
-        static let sessionToken = "session_token"
-        static let deviceToken = "device_token"
+        static let serviceIdentifier: String = UIApplication.bundleIdentifier
+        static let sessionToken: String = "session_token"
+        static let deviceToken: String = "device_token"
     }
     
     struct Formatters {
@@ -22,7 +22,7 @@ struct Constants {
         static let debugConsoleDateFormatter: DateFormatter = {
             let formatter = DateFormatter()
             formatter.dateFormat = "yyyy-MM-dd HH:mm:ss.SSS"
-            formatter.timeZone = TimeZone(identifier: "UTC")!
+            formatter.timeZone = TimeZone(identifier: "UTC")
             return formatter
         }()
         

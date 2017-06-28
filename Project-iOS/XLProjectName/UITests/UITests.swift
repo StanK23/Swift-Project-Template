@@ -6,10 +6,10 @@
 //  Copyright (c) 2016 XLOrganizationName. All rights reserved.
 //
 
-import XCTest
 import Nimble
+import XCTest
 
-class UITests: XCTestCase {
+internal class UITests: XCTestCase {
     
     override func setUp() {
         super.setUp()

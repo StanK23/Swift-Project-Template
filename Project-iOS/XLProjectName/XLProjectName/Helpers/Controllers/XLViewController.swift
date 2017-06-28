@@ -7,11 +7,11 @@
 //
 
 import Foundation
-import UIKit
 import RxCocoa
 import RxSwift
+import UIKit
 
-class XLViewController: UIViewController {
-    let disposeBag = DisposeBag()
+internal class XLViewController: UIViewController {
+    let disposeBag: DisposeBag = DisposeBag()
 
 }

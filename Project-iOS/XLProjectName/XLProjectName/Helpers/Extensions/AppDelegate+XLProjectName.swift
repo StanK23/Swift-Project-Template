@@ -6,8 +6,8 @@
 //  Copyright © 2016 'XLOrganizationName'. All rights reserved.
 //
 
-import Foundation
 import Eureka
+import Foundation
 
 extension AppDelegate {
 
