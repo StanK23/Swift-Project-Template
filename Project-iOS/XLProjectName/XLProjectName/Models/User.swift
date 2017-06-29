@@ -8,6 +8,6 @@
 
 import Foundation
 
-internal class User {
+class User {
     
 }
