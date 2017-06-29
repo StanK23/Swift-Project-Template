@@ -2,6 +2,7 @@ source 'https://github.com/CocoaPods/Specs'
 
 platform :ios, '8.0'
 use_frameworks!
+inhibit_all_warnings!
 
 # Add Application pods here
 def app_pods
