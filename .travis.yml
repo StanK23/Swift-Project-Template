@@ -1,10 +1,9 @@
 language: objective-c
 osx_image: xcode8.3
 
-before_script: 
-- rvm get head
-
 before_install:
+- rvm get head
+- rvm get stable
 - brew update
 - brew outdated carthage || brew upgrade carthage
 - if brew outdated | grep -qx xctool; then brew upgrade xctool; fi
