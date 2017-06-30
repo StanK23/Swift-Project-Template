@@ -3,7 +3,7 @@
 //  XLProjectName
 //
 //  Created by XLAuthorName ( XLAuthorWebsite )
-//  Copyright © 2017 'XLOrganizationName'. All rights reserved.
+//  Copyright (c) 2017 XLOrganizationName. All rights reserved.
 //
 
 import Foundation
