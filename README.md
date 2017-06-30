@@ -20,7 +20,7 @@ iOS project has the following configuration:
   * Swift Lint integration.
   * `travis.yml` file.
   * `podfile` containing most used libraries by us.
-    - Realm, Decodable, Alamofire, RxSwift, Eureka and many others.
+    - Realm, Alamofire, RxSwift, Eureka and many others.
 
 * Networking
   * `Alamofire` networking library.
