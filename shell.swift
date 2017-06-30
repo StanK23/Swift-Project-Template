@@ -6,14 +6,12 @@ let templateProjectName = "XLProjectName"
 let templateBundleDomain = "XLOrganizationIdentifier"
 let templateAuthor = "XLAuthorName"
 let templateAuthorWebsite = "XLAuthorWebsite"
-let templateUserName = "XLUserName"
 let templateOrganizationName = "XLOrganizationName"
 
 var projectName = "MyProject"
 var bundleDomain = "com.xmartlabs"
 var author = "Xmartlabs SRL"
 var authorWebsite = "https://xmartlabs.com"
-var userName = "xmartlabs"
 var organizationName = "Xmartlabs SRL"
 
 let fileManager = FileManager.default
@@ -52,7 +50,6 @@ extension NSURL {
         var newContent = content.replacingOccurrences(of: templateProjectName, with: projectName)
         newContent = newContent.replacingOccurrences(of: templateBundleDomain, with: bundleDomain)
         newContent = newContent.replacingOccurrences(of: templateAuthor, with: author)
-        newContent = newContent.replacingOccurrences(of: templateUserName, with: userName)
         newContent = newContent.replacingOccurrences(of: templateAuthorWebsite, with: authorWebsite)
         newContent = newContent.replacingOccurrences(of: templateOrganizationName, with: organizationName)
         try! newContent.write(to: self as URL, atomically: true, encoding: String.Encoding.utf8)
@@ -112,7 +109,6 @@ checkThatProjectForlderCanBeCreated(projectURL: newProjectFolderURL)
 bundleDomain = prompt(message: "Bundle domain", defaultValue: bundleDomain)
 author       = prompt(message: "Author", defaultValue: author)
 authorWebsite  = prompt(message: "Author Website", defaultValue: authorWebsite)
-userName     = prompt(message: "Username", defaultValue: userName)
 organizationName = prompt(message: "Organization Name", defaultValue: organizationName)
 
 // Copy template folder to a new folder inside run script url called projectName
