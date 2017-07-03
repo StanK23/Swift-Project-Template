@@ -1,0 +1,91 @@
+PODS:
+  - Alamofire (4.5.0)
+  - AlamofireImage (3.2.0):
+    - Alamofire (~> 4.1)
+  - AsyncSwift (2.0.1)
+  - Device (2.1.0)
+  - DynamicColor (3.3)
+  - Eureka (3.0.0)
+  - KeychainAccess (3.0.2)
+  - Moya/Core (8.0.5):
+    - Alamofire (~> 4.1)
+    - Result (~> 3.0)
+  - Moya/RxSwift (8.0.5):
+    - Moya/Core
+    - RxSwift (~> 3.0)
+  - Nimble (5.1.1)
+  - NVActivityIndicatorView (3.6.1)
+  - ObjectMapper (2.2.7)
+  - Quick (1.1.0)
+  - R.swift (3.3.0):
+    - R.swift.Library (~> 3.0.2)
+  - R.swift.Library (3.0.2)
+  - Realm (2.8.3):
+    - Realm/Headers (= 2.8.3)
+  - Realm/Headers (2.8.3)
+  - RealmSwift (2.8.3):
+    - Realm (= 2.8.3)
+  - Result (3.2.3)
+  - RxAlamofire (3.0.3):
+    - RxAlamofire/Core (= 3.0.3)
+  - RxAlamofire/Core (3.0.3):
+    - Alamofire (~> 4.0)
+    - RxSwift (~> 3.0)
+  - RxCocoa (3.5.0):
+    - RxSwift (~> 3.4)
+  - RxSwift (3.5.0)
+  - SwiftDate (4.1.2)
+  - SwiftLint (0.20.0)
+  - XLSwiftKit (2.0.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.0)
+  - AlamofireImage (~> 3.0)
+  - AsyncSwift (~> 2.0)
+  - Device (~> 2.0)
+  - DynamicColor (~> 3.0)
+  - Eureka (~> 3.0.0)
+  - KeychainAccess (~> 3.0)
+  - Moya/RxSwift (~> 8.0.5)
+  - Nimble (~> 5.0)
+  - NVActivityIndicatorView (~> 3.0)
+  - ObjectMapper (~> 2.2)
+  - Quick (~> 1.0)
+  - R.swift (~> 3.0)
+  - RealmSwift (~> 2.0)
+  - Result (~> 3.0)
+  - RxAlamofire (~> 3.0)
+  - RxCocoa (~> 3.0)
+  - RxSwift (~> 3.0)
+  - SwiftDate (~> 4.0)
+  - SwiftLint
+  - XLSwiftKit (~> 2.0)
+
+SPEC CHECKSUMS:
+  Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
+  AlamofireImage: 157ed682cc81d3b9db4fb90c1f12180ac552d93b
+  AsyncSwift: 632138e42ead868b53c745fcde9bf733ce1527ad
+  Device: b6f1eac43c482e9b4be50e7606253f2a27449685
+  DynamicColor: 3cdaa1e01c16e93ba744e0630f768373e0fc7a7d
+  Eureka: f36fd440c3ebb7bfea0a4fbe6f16a05f1cb35906
+  KeychainAccess: a986406022dfc7c634c691ad3bec670cc6a32002
+  Moya: c37eec09a098ba9991b5a963b291fc5704bdb9ef
+  Nimble: 415e3aa3267e7bc2c96b05fa814ddea7bb686a29
+  NVActivityIndicatorView: 9f52a7f84bf5c6a798722c450fe3c198e01c56ed
+  ObjectMapper: 65abcfd9a61cf7396cbd14a4fb22fddfcc46577e
+  Quick: dafc587e21eed9f4cab3249b9f9015b0b7a7f71d
+  R.swift: bde9704d50ff36820f49e266bc88ef545e1e9b36
+  R.swift.Library: fbdec16c9802ad104fc1ba53415dc190e6ec5c73
+  Realm: 3601ef091c8c499a31101d8563b991e75546cdce
+  RealmSwift: 8183818515471b01a99abdd2970f8e4fd52b6f4a
+  Result: 128640a6347e8d2ae48b142556739a2d13f90ce6
+  RxAlamofire: 5eb39188c4917ad98127c0ecb4878a61b7517003
+  RxCocoa: a0a09f45d0e5b48ecb6a4a7b4b4c89c88d3f633f
+  RxSwift: 18ee9d78b45edb3b0b7e79916b47a116e6dbc842
+  SwiftDate: 2dfdebd4f67ae71c9c3e2413ee3c56947f302858
+  SwiftLint: 3f7543509c931d1291395335f34e245d3919b7f2
+  XLSwiftKit: aaf29528b340180a5d7b9c7e226c0e8fe188f3f5
+
+PODFILE CHECKSUM: 8e0d314c5ffce78f22a333949b24b9f3fb7d923a
+
+COCOAPODS: 1.2.1
