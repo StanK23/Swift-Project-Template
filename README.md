@@ -1,6 +1,6 @@
 # Swift-Project-Template
 
-[![Build Status](https://travis-ci.org/BlackBricks/Swift-Project-Template.svg?branch=master)](https://travis-ci.org/BlackBricks/Swift-Project-Template)
+[![BuddyBuild](https://dashboard.buddybuild.com/api/statusImage?appID=5959d26d4e79bd0001de5986&branch=master&build=latest)](https://dashboard.buddybuild.com/apps/5959d26d4e79bd0001de5986/build/latest?branch=master)
 
 Create your iOS Base project in just a few seconds by executing a script and answering some project questions. This is what we use to get started with a new iOS project from scratch!
 
