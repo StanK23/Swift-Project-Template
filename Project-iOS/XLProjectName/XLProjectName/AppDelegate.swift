@@ -20,6 +20,8 @@ internal class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         stylizeEurekaRows()
         
+        BuddyBuildSDK.setup()
+        
         // Register the supported push notifications interaction types.
         // Shows alert view askying for allowed push notification types
         // you can move this line to a more suitable point in the app.

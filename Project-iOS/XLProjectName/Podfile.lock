@@ -3,6 +3,7 @@ PODS:
   - AlamofireImage (3.2.0):
     - Alamofire (~> 4.1)
   - AsyncSwift (2.0.1)
+  - BuddyBuildSDK (1.0.16)
   - Device (2.1.0)
   - DynamicColor (3.3)
   - Eureka (3.0.0)
@@ -35,13 +36,14 @@ PODS:
     - RxSwift (~> 3.4)
   - RxSwift (3.5.0)
   - SwiftDate (4.1.2)
-  - SwiftLint (0.20.0)
+  - SwiftLint (0.20.1)
   - XLSwiftKit (2.0.1)
 
 DEPENDENCIES:
   - Alamofire (~> 4.0)
   - AlamofireImage (~> 3.0)
   - AsyncSwift (~> 2.0)
+  - BuddyBuildSDK
   - Device (~> 2.0)
   - DynamicColor (~> 3.0)
   - Eureka (~> 3.0.0)
@@ -65,6 +67,7 @@ SPEC CHECKSUMS:
   Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
   AlamofireImage: 157ed682cc81d3b9db4fb90c1f12180ac552d93b
   AsyncSwift: 632138e42ead868b53c745fcde9bf733ce1527ad
+  BuddyBuildSDK: 2c5469eee2981a3365386e46393e97068d75e4f4
   Device: b6f1eac43c482e9b4be50e7606253f2a27449685
   DynamicColor: 3cdaa1e01c16e93ba744e0630f768373e0fc7a7d
   Eureka: f36fd440c3ebb7bfea0a4fbe6f16a05f1cb35906
@@ -83,9 +86,9 @@ SPEC CHECKSUMS:
   RxCocoa: a0a09f45d0e5b48ecb6a4a7b4b4c89c88d3f633f
   RxSwift: 18ee9d78b45edb3b0b7e79916b47a116e6dbc842
   SwiftDate: 2dfdebd4f67ae71c9c3e2413ee3c56947f302858
-  SwiftLint: 3f7543509c931d1291395335f34e245d3919b7f2
+  SwiftLint: f60095dc173a3f3ec505bb34f5229c3dfd779a54
   XLSwiftKit: aaf29528b340180a5d7b9c7e226c0e8fe188f3f5
 
-PODFILE CHECKSUM: 8e0d314c5ffce78f22a333949b24b9f3fb7d923a
+PODFILE CHECKSUM: 49e420b1d7f8e5df00889951c04d0c7067197639
 
 COCOAPODS: 1.2.1
