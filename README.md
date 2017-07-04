@@ -18,7 +18,6 @@ iOS project has the following configuration:
   * R-Swift integration.
   * Warnings for TODO and FIXME comments.
   * Swift Lint integration.
-  * `travis.yml` file.
   * `podfile` containing most used libraries by us.
     - Realm, Alamofire, RxSwift, Eureka and many others.
 
