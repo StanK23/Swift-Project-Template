@@ -9,6 +9,7 @@ def app_pods
     pod 'Alamofire', '~> 4.0'
     pod 'AlamofireImage', '~> 3.0'
     pod 'AsyncSwift', '~> 2.0'
+    pod 'BuddyBuildSDK'
     pod 'Device', '~> 2.0'
     pod 'DynamicColor', '~> 3.0'
     pod 'Eureka', '~> 3.0.0'
